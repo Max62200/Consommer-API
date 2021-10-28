@@ -1,3 +1,7 @@
+html, body, p{
+    font-family: Roboto;
+}
+
 .BG-1{
     background-image: url(../images/thumb2.JPG) ;
     background-size: cover;
@@ -26,4 +30,67 @@
     color: white;
     font-weight: bolder ;
     margin-top: 5%;
+    text-decoration: overline;
+    
+}
+
+/* registration form bootsrap */
+
+.height {
+    height: 100vh
+}
+
+.card {
+    border: none;
+    padding: 20px;
+    background-color: #1c1e21;
+    color: #fff
+}
+
+
+
+.form-input {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.form-input i {
+    position: absolute;
+    font-size: 18px;
+    top: 15px;
+    left: 10px
+}
+
+.form-control {
+    height: 50px;
+    background-color: #1c1e21;
+    text-indent: 24px;
+    font-size: 15px
+}
+
+.form-control:focus {
+    background-color: #25272a;
+    box-shadow: none;
+    color: #fff;
+    border-color: #4f63e7
+}
+
+.form-check-label {
+    margin-top: 2px;
+    font-size: 14px
+}
+
+.signup {
+    height: 50px;
+    font-size: 14px
+}
+
+
+
+/* registration form bootstrap */
+
+.card-text{
+    color: black;
+    text-align:center;
 }
