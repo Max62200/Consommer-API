@@ -1,6 +1,3 @@
-html, body, p{
-    font-family: Roboto;
-}
 
 .BG-1{
     background-image: url(../images/thumb2.JPG) ;
@@ -93,4 +90,8 @@ html, body, p{
 .card-text{
     color: black;
     text-align:center;
+}
+
+.nav2{
+    text-align: right;
 }
