@@ -1,12 +1,12 @@
 
 .BG-1{
-    background-image: url(./assets/images/thumb2.JPG) ;
+    background-image: url(../images/thumb2.JPG) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .BG-2{
-    background-image: url(./assets/images/technology.JPG) ;
+    background-image: url(../images/technology.JPG) ;
     background-size: cover;
     background-repeat: no-repeat;
 }
