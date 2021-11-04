@@ -52,7 +52,9 @@
 
     <div class="container">
         <h1 class="H2">SE CONNECTER</h1>
-
+ <div class="div_status">
+                <p id="token"></p>
+            </div>
              <div class="row d-flex align-items-center justify-content-center mt-5">
                 <div class="col-md-6">
                     <div class="card px-5 py-5">
@@ -60,7 +62,7 @@
                         <div class="form-input"><input type="text" id="email" class="form-control" placeholder="Email"> </div>
                         <div class="form-input"><input type="password" id="mdp" class="form-control" placeholder="mdp"> </div>
 
-                        <button class="btn btn-primary mt-4 signup" type="submit">Connexion</button>
+                        <button class="btn btn-primary mt-4 signup" onclick="login();" type="submit">Connexion</button>
                         
                         <div class="text-center mt-4"> <a href="../pages/register.html" class="text-decoration-none">S'inscrire</a> </div>
                     </div>
