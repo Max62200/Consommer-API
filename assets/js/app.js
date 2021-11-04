@@ -4,7 +4,7 @@ const div_List = document.getElementById('div_List');
 const code = document.getElementById('code');
 fetch(url)
 	.then(function(res) {
-		code.innerHTML = res.status;
+		code.innerHTML = 'status : ' + res.status;
 		if (res.ok) {
 			return res.json();
 		}
@@ -58,7 +58,7 @@ Form.addEventListener('submit', (event) => {
 	fetch('https://reqres.in/api/users', options)
 		.then((res) => {
 			if (res.ok) {
-				return (code.innerHTML = res.status);
+				return (code.innerHTML =  'status : ' + res.status);
 			} else {
 				return Promise.reject('Une erreur est survenue');
 			}
@@ -73,7 +73,7 @@ const myDataObject = document.getElementById('SubmitDel');
 function ClickDelete(myDataObject) {
 	fetch(url + myDataObject, {
 		method: 'DELETE',
-	}).then((res) => (code.innerHTML = res.status));
+	}).then((res) => (code.innerHTML =  'status : ' + res.status));
 }
 
 // put //
@@ -96,7 +96,7 @@ function Update() {
 	fetch('https://reqres.in/api/users/2', options)
 		.then((res) => {
 			if (res.ok) {
-				return (code.innerHTML = res.status);
+				return (code.innerHTML =  'status : ' + res.status);
 			} else {
 				return Promise.reject('Une erreur est survenue');
 			}
@@ -126,6 +126,6 @@ function login() {
 		.then((res) => res.json())
 		.then((data) => localStorage.setItem('dataLog', JSON.stringify(data.token)));
 
-	let tokenactual = JSON.parse(localStorage.getItem('dataLog'));
-	document.getElementById('token').innerHTML = tokenactual;
+	let token = JSON.parse(localStorage.getItem('dataLog'));
+	document.getElementById('token').innerHTML =  'token : ' + token;
 }
