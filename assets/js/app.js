@@ -126,6 +126,7 @@ function login() {
 		.then((res) => res.json())
 		.then((data) => localStorage.setItem('dataLog', JSON.stringify(data.token)));
 
-	let token = JSON.parse(localStorage.getItem('dataLog'));
-	document.getElementById('token').innerHTML =  'token : ' + token;
+	var div_Token = document.getElementById('token');
+	var token = JSON.parse(localStorage.getItem('dataLog'));
+	div_Token.innerHTML =  'token : ' + token;
 }
